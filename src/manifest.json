@@ -1,0 +1,20 @@
+{
+	"name": "Random Word - devel version (not stable)",
+	"version": "0.0.1",
+	"description": "Generate Random Word",
+	"icons": {
+		"16": "images/icon_016.png",
+		"32": "images/icon_032.png",
+		"48": "images/icon_048.png",
+		"128": "images/icon_128.png",
+		"256": "images/icon_256.png"
+	},
+	"browser_action": {
+		"default_icon": "images/icon_016.png",
+		"default_title": "Generate Random Words",
+		"popup": "popup.html"
+	},
+	"options_page": "options.html",
+	"permissions": [
+	]
+} 
