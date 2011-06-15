@@ -44,3 +44,7 @@ RW.generate = function () {
 	}
 	return rtn;
 }
+
+RW.goOptions = function () {
+	chrome.tabs.create({url:chrome.extension.getURL("/options.html")});
+}

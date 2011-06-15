@@ -1,1 +1,81 @@
-<html><head><title>Random Word Options</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="https://www.google.com/jsapi"></script> <script type="text/javascript"> google.load("jquery", "1.4");</script><script type="text/javascript" src="base.js"></script> <script type="text/javascript" src="options.js"></script> <script type="text/javascript"> $(function(){	RWO.mkSelectLettersForm('letter-select');	$('form').attr('target', '_blank');});</script><style>h1 {	background: url(images/icon_048.png) no-repeat;	text-indent: 53px; 	margin-bottom: 0px;}h2,h3 {	margin-bottom: 0px;}.letters-block {	font-family: monospace;	font-size: 12px;	text-align: center;	float: left;	padding: 5px;	margin: 1px;	border: 1px solid #999;}#paypal {	width: 230px;	background: #EEE;	border: 1px solid #999;	margin: 10px;	padding: 10px;}#paypal table tr td {	color: #666;	font-size: 10px;}</style></head><body><h1>Random Word Options</h1><p>Please input word length and check the letter used. <strong>If there is no checked letter, All letters are used</strong>. </p><div id="letter-select"></div><button onclick="RWO.save_options()">Save</button><span id="status"></span><div id="paypal"><!-- by paypal / --><form action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="C867WHV9F52EC"><table><tr><td><input type="hidden" name="on0" value="Evaluation - Price">Evaluation - Price</td></tr><tr><td><select name="os0">	<option value="* - Fair">* - Fair $5.00</option>	<option value="* * - Good">* * - Good $10.00</option>	<option value="* * * - Fine">* * * - Fine $15.00</option>	<option value="* * * * *  - EXCELLENT">* * * * *  - EXCELLENT $50.00</option></select> </td></tr><tr><td><input type="hidden" name="on1" value="Message">Message</td></tr><tr><td><input type="text" name="os1" maxlength="60"></td></tr></table><input type="hidden" name="currency_code" value="USD"><input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online."><img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1"></form><!-- / by paypal --></div><p>icon by <a href="http://icondock.com/free/15-free-origami-icons" target="_blank">ICON DOCK</a></p></body></html>
+<html>
+<head><title>Random Word Options</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+<script type="text/javascript"> 
+google.load("jquery", "1.4");
+</script>
+<script type="text/javascript" src="base.js"></script> 
+<script type="text/javascript" src="options.js"></script> 
+<script type="text/javascript"> 
+$(function(){
+	RWO.mkSelectLettersForm('letter-select');
+	$('form').attr('target', '_blank');
+});
+</script>
+<style>
+h1 {
+	background: url(images/icon_048.png) no-repeat;
+	text-indent: 53px; 
+	margin-bottom: 0px;
+}
+h2,h3 {
+	margin-bottom: 0px;
+}
+.letters-block {
+	font-family: monospace;
+	font-size: 12px;
+	text-align: center;
+	float: left;
+	padding: 5px;
+	margin: 1px;
+	border: 1px solid #999;
+}
+#paypal {
+	width: 230px;
+	background: #EEE;
+	border: 1px solid #999;
+	margin: 10px;
+	padding: 10px;
+}
+#paypal table tr td {
+	color: #666;
+	font-size: 10px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1>Random Word Options</h1>
+
+<p>Please input word length and check the letter used. <strong>If there is no checked letter, All letters are used</strong>. </p>
+
+<div id="letter-select"></div>
+
+<button onclick="RWO.save_options()">Save &amp; Close</button><span id="status"></span>
+
+<div id="paypal">
+<!-- by paypal / --><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="C867WHV9F52EC">
+<table>
+<tr><td><input type="hidden" name="on0" value="Evaluation - Price">Evaluation - Price</td></tr><tr><td><select name="os0">
+	<option value="* - Fair">* - Fair $5.00</option>
+	<option value="* * - Good">* * - Good $10.00</option>
+	<option value="* * * - Fine">* * * - Fine $15.00</option>
+	<option value="* * * * *  - EXCELLENT">* * * * *  - EXCELLENT $50.00</option>
+</select> </td></tr>
+<tr><td><input type="hidden" name="on1" value="Message">Message</td></tr><tr><td><input type="text" name="os1" maxlength="60"></td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+</form><!-- / by paypal -->
+</div>
+
+<p>icon by <a href="http://icondock.com/free/15-free-origami-icons" target="_blank">ICON DOCK</a></p>
+</body>
+</html>

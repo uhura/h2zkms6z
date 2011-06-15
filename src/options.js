@@ -67,8 +67,11 @@ RWO.save_options = function () {
 	status.innerHTML = "Options Saved.";
 	setTimeout(function() {
 		status.innerHTML = "";
-		location.reload();
+		chrome.tabs.getSelected(null, function(tab) {
+			chrome.tabs.remove(tab.id);
+		});
 	}, 750);
+
 }
 
 RWO.checkAll = function (class, on) {

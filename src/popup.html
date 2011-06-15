@@ -1,1 +1,47 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="https://www.google.com/jsapi"></script> <script type="text/javascript"> google.load("jquery", "1.4");</script><script type="text/javascript" src="base.js"></script> <script type="text/javascript"> $(function(){	$('#word').focus(function(){		$(this).select();	});	$('#word').val(RW.generate());	$('#word').focus();});</script><style>body {	margin: 0px;	padding: 0px;	/* overflow: hidden;	background: #CCC; */}#main {	width: 220px;	overflow: auto;}</style></head><body><div id="main">	<img src="images/icon_016.png" />	<input type="text" id="word" style="width: 140px;" />	<button onclick="javascript:$('#word').val(RW.generate());$('#word').focus();">Re</button></div><body></html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+<script type="text/javascript"> 
+google.load("jquery", "1.4");
+</script>
+<script type="text/javascript" src="base.js"></script> 
+<script type="text/javascript"> 
+$(function(){
+	$('#word').focus(function(){
+		$(this).select();
+	});
+	$('#word').val(RW.generate());
+	$('#word').focus();
+});
+</script>
+
+<style>
+body {
+	margin: 0px;
+	padding: 0px;
+	/* overflow: hidden;
+	background: #CCC; */
+}
+#main {
+	width: 220px;
+	overflow: auto;
+}
+#go-options {
+	font-size: 9px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="main">
+	<img src="images/icon_016.png" />
+	<input type="text" id="word" style="width: 140px;" />
+	<button onclick="javascript:$('#word').val(RW.generate());$('#word').focus();">Re</button><br />
+	<a href="javascript:RW.goOptions();" id="go-options">options</a>
+</div>
+
+<body>
+</html>
