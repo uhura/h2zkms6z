@@ -1,6 +1,9 @@
 /**
  * options.js
  * require: base.js, jquery
+ *
+ * Copyright (c) 2011 uhura.jp. All rights reserved.
+ * Licensed under the MIT License.
  */
 
 var RWO = {}; // as Random Words Options

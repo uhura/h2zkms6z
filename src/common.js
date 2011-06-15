@@ -1,6 +1,9 @@
 /**
  * common.js
  * require: jquery
+ *
+ * Copyright (c) 2011 uhura.jp. All rights reserved.
+ * Licensed under the MIT License.
  */
 
 var Letters = {
