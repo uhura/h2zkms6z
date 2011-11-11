@@ -77,8 +77,8 @@ RWO.save_options = function () {
 
 }
 
-RWO.checkAll = function (class, on) {
-	$('.' + class).each(function(){
+RWO.checkAll = function (className, on) {
+	$('.' + className).each(function(){
 		if (on) {
 			$(this).attr('checked', true);
 		} else {
